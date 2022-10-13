@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Wrote a function that randomly chooses any of the 3 words inside of a variable
+      function getComputerChoice() {
+        let outcomes = ["Rock", "Paper", "Scissors"];
+        let result = outcomes[Math.floor(Math.random() * outcomes.length)];
+        return result;
+      }
+      console.log(getComputerChoice());
+      //rock-paper-scissor consists of two players that have a choice between Rock, Scissor, or Paper
+      //The basic rules are this:
+      //rock > scissor, rock < paper, rock = rock
+      //scissor < rock, scissor > paper, scissor = scissor
+      //paper < scissor, paper > rock, paper = paper
+      //Each player has 3 choices: rock, paper, or scissor
+    </script>
+  </body>
+</html>
