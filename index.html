@@ -8,6 +8,8 @@
   </head>
   <body>
     <script>
+      const playerSelection = "rock";
+      const computerSelection = getComputerChoice();
       //Wrote a function that randomly chooses any of the 3 words inside of a variable
       function getComputerChoice() {
         let outcomes = ["Rock", "Paper", "Scissors"];
@@ -15,6 +17,7 @@
         return result;
       }
       console.log(getComputerChoice());
+
       //rock-paper-scissor consists of two players that have a choice between Rock, Scissor, or Paper
       //The basic rules are this:
       //rock > scissor, rock < paper, rock = rock
